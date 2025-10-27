@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AttendEase Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+    .sidebar {
+      height: 100vh;
+      background: #000;
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 220px;
+    }
+    .sidebar h2 {
+      color: #a855f7;
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+    .sidebar a {
+      color: #aaa;
+      text-decoration: none;
+      display: block;
+      margin: 15px 0;
+      font-size: 1.1rem;
+      transition: 0.3s;
+    }
+    .sidebar a:hover {
+      color: #fff;
+    }
+    .content {
+      margin-left: 240px;
+      padding: 20px;
+    }
+    .card {
+      background: #1c1c1c;
+      border: none;
+      color: white;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+    .card:hover {
+      background: #2a2a2a;
+    }
+    .navbar {
+      background: #000;
+    }
+    .navbar-brand {
+      color: #a855f7 !important;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>AttendEase</h2>
+    <a href="#">📊 Dashboard</a>
+    <a href="#">📝 Attendance</a>
+    <a href="#">👨‍🎓 Students</a>
+    <a href="#">📑 Reports</a>
+    <a href="#">⚙️ Settings</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="content">
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-dark mb-4">
+      <div class="container-fluid">
+        <a class="navbar-brand">Student Portal</a>
+        <a href="login.html">
+        <button class="btn btn-outline-light">Logout</button></a>
+      </div>
+    </nav>
+
+    <!-- Dashboard Cards -->
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h4>Attendance %</h4>
+          <p class="display-6 text-success">87%</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h4>Today’s Classes</h4>
+          <p class="display-6 text-info">5</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h4>Total Students</h4>
+          <p class="display-6 text-warning">320</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reports Section -->
+    <div class="mt-5">
+      <h3>Recent Reports</h3>
+      <table class="table table-dark table-hover mt-3">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Class</th>
+            <th>Attendance %</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>21 Aug 2025</td>
+            <td>MCA - DBMS</td>
+            <td>92%</td>
+            <td><span class="badge bg-success">Good</span></td>
+          </tr>
+          <tr>
+            <td>20 Aug 2025</td>
+            <td>MCA - Java</td>
+            <td>78%</td>
+            <td><span class="badge bg-warning">Average</span></td>
+          </tr>
+          <tr>
+            <td>19 Aug 2025</td>
+            <td>MCA - Python</td>
+            <td>65%</td>
+            <td><span class="badge bg-danger">Low</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
